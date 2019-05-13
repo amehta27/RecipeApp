@@ -35,6 +35,7 @@ export class AddReceipe extends Component {
   .then(result => {
       if(result.success) {
         //   this.populateAllBooks
+        this.props.history.push('/view-all-receipes')
       }
   })
 
