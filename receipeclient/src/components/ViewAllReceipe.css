@@ -1,0 +1,29 @@
+
+.listContainer {
+    display: flex;
+
+    
+}
+
+.itemstyling{
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 3%;
+
+
+}
+
+.item-container {
+    width: 20em;
+
+}
+
+img {
+    width : 150px;
+    height : 150px;
+}
+
+/* .columndisplay{
+    
+
+} */

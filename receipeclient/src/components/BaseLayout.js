@@ -33,7 +33,7 @@ export class Menu extends Component {
   
     render() {
       return (
-        <div>
+        <div className = "baselayout">
           <Menu />
           {this.props.children} 
           <Footer />

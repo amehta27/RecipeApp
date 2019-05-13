@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import './ViewAllReceipe.css';
+
 
 export class ViewAllReceipe extends Component {
 
@@ -24,17 +26,22 @@ export class ViewAllReceipe extends Component {
         let receipes = this.state.receipes
         let receipeItems = receipes.map((receipe) => {
           return(
-            <div>
-            <li>{receipe.category}</li>
-            <li>{receipe.title}</li>
-            <li>{receipe.description}</li>
-            <li>{receipe.mediaurl}</li>
-            <li>{receipe.imageUrl}</li>
+            <div className = 'item-container'>
+                <ul className="itemstyling">
+                    <li>{receipe.category}</li>
+                    <li><img src = {receipe.imageUrl}/></li>
+                    <li>{receipe.title}</li>
+                    <li className = "columndisplay">
+                    <div dangerouslySetInnerHTML = {{__html:receipe.description}} />
+                    </li>
+                    <li><a href={receipe.mediaurl}>Video</a></li>
+            
+                </ul>
             </div>
           )
         })
         return (
-           <ul>{receipeItems}</ul>
+           <div className='listContainer'>{receipeItems}</div>
         )
       }
     
