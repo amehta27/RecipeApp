@@ -12,8 +12,8 @@ export class Menu extends Component {
         
         <ul className="menu">
         <li><NavLink to="/" className="link">Home</NavLink></li>
-        <li><Link to="/view-all-receipes">View All Recipe</Link></li>
-        <li><Link to="/add-receipe">Add Receipe</Link></li>
+        <li><NavLink to="/view-all-receipes" className="link">View All Recipe</NavLink></li>
+        <li><NavLink to="/add-receipe" className="link">Add Receipe</NavLink></li>
         </ul>
       )
     }
@@ -34,9 +34,11 @@ export class Menu extends Component {
     render() {
       return (
         <div className = "baselayout">
-          <Menu />
-          {this.props.children} 
-          <Footer />
+             <div className='content-wrap'>
+                <Menu />
+                {this.props.children} 
+                <Footer />
+          </div>
         </div>
       )
     }

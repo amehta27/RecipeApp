@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './AddReceipe.css';
 // import { threadId } from 'worker_threads';
 
 export class AddReceipe extends Component {
@@ -8,8 +9,10 @@ export class AddReceipe extends Component {
         this.state = {
             category : '',
             title    : '',
-            description :''
-
+            description :'',
+            imageUrl : '',
+            mediaUrl :'',
+            amountOfTime : ''
         }
 
     }
@@ -29,7 +32,10 @@ export class AddReceipe extends Component {
         body: JSON.stringify({
             category : this.state.category,
             title : this.state.title,
-            description : this.state.description
+            description : this.state.description,
+            imageUrl : this.state.imageUrl,
+            mediaUrl : this.state.mediaUrl,
+            amountOfTime : this.state.amountOfTime
         })
   }).then(response => response.json())
   .then(result => {
@@ -46,12 +52,29 @@ export class AddReceipe extends Component {
 
   
     return (
-      <div>
-          <label> Enter category</label><input onChange={this.handleTextChange} type = "text" name="category"/>
-          <label> Enter Title</label><input onChange={this.handleTextChange} type = "text" name="title"/>
-          <label> Enter Description</label><input onChange={this.handleTextChange} type = "text" name="description"/>
-          <button onClick= {this.handleSaveClick}>Add Receipe</button>
-      
+      <div className="columnalign">
+        <div className = "heading">Add Receipe here</div>
+        <div className="formstyling">
+          <label> Enter category:</label><input className = "inputbox1" onChange={this.handleTextChange} type = "text" name="category"/>
+        </div>
+        <div className="formstyling">
+          <label> Enter Title:</label><input className = "inputbox2"onChange={this.handleTextChange} type = "text" name="title"/>
+        </div >
+        <div className="formstyling">
+            <label> Enter Description:</label><input className = "inputbox3" onChange={this.handleTextChange} type = "text" name="description"/>
+        </div> 
+        <div className="formstyling">
+            <label> Enter ImageUrl:</label><input className = "inputbox4" onChange={this.handleTextChange} type = "text" name="description"/>
+        </div> 
+        <div className="formstyling">
+            <label> Enter MediaUrl:</label><input className = "inputbox5" onChange={this.handleTextChange} type = "text" name="description"/>
+        </div> 
+        <div className="formstyling">
+            <label>Amount of time:</label><input className = "inputbox6" onChange={this.handleTextChange} type = "text" name="description"/>
+        </div> 
+        <div className="formstyling">  
+        <button className="buttonstyle"onClick= {this.handleSaveClick}>Add Receipe</button>
+         </div>
       </div>
     )
   }
