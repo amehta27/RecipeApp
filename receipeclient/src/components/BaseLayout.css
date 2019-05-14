@@ -1,28 +1,53 @@
 
 
 .menu {
-    background-color: black;
-    color: green;
+    background-color: rgb(90, 14, 65);
+    color: white;
     list-style: none;
     display: flex;
+    margin:0;
   }
   
-  /* .link {
-    background-color: purple; 
-  } */
-  
+   .link {
+   
+    color : whitesmoke;
+   }
+
   .menu li {
     margin: 10px;
   }
   
   .footer {
-    background-color: blue;
-    color: white;
+    margin-bottom: -25px;
+    
+    background-color:rgb(90, 14, 65);
+    text-align : center;
+    color : white;
+    
+     bottom: 0;
+     width: 100%;
+     height: 2.5rem;  
+
+     position: absolute;
+
+    /* width : 20px;
+    background-color: rgb(179, 54, 54);
+    color: black; */
   }
 
   .baselayout{
+   color : red;
+   font-size: 20px;
+   position:relative;
+   /* background-color :#2ab7ca; */
+   background-image: url('../images/cooking.png');
+   background-repeat: repeate-y;
+   background-size: 100%;
+   min-height:100vh;
+  }
 
-   background-color : #2ab7ca;
+  .content-wrap{
+      padding-bottom: 2.5rem;
   }
 
   

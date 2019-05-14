@@ -1,0 +1,67 @@
+.columnalign{
+  margin-top: 6%;
+  margin-left:6%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+label{
+    padding-right: 40px;
+    margin-bottom: 2%;
+}
+
+.inputbox1{
+    margin-left: 15px;
+    width: 300px;
+    height : 20px;
+}
+
+.formstyling{
+   margin-bottom:3%; 
+}
+
+.inputbox2{
+    margin-left: 48px;
+    width: 300px;
+    height : 20px;
+}
+
+.inputbox3{
+    margin-left: -2px;
+    width: 300px;
+    height : 20px;
+}
+
+.inputbox4{
+    margin-left: 12px;
+    width: 300px;
+    height : 20px;
+}
+
+.inputbox5{
+    margin-left: 12px;
+    width: 300px;
+    height : 20px;
+}
+
+.inputbox6{
+    margin-left: 10px;
+    width: 300px;
+    height : 20px;
+}
+       
+.buttonstyle{
+   width : 150px;
+   height :25px;
+   background-color: darkslateblue;
+   font-size: 15px;
+
+}
+.heading{
+    padding-right: 40px;
+    margin-bottom: 2%;
+    font-size: 20px; 
+    text-decoration-line: underline;
+    
+}

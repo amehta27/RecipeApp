@@ -35,7 +35,9 @@ export class ViewAllReceipe extends Component {
                     <div dangerouslySetInnerHTML = {{__html:receipe.description}} />
                     </li>
                     <li><a href={receipe.mediaurl}>Video</a></li>
-            
+                    <div className="timelabel">
+                    <label>amount Of time:</label><li className="paddingtime">{receipe.amountoftime}</li>
+                     </div>
                 </ul>
             </div>
           )

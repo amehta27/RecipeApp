@@ -19,10 +19,18 @@
 }
 
 img {
-    width : 150px;
-    height : 150px;
+    width : 200px;
+    height : 200px;
+}
+.timelabel{
+    display : flex;
+    flex : row;
 }
 
+.paddingtime{
+
+margin-left : -35px;
+}
 /* .columndisplay{
     
 
