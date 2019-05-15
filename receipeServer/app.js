@@ -14,6 +14,8 @@ let receipe = [{title: 'Fettucinne Afredo', category:'Itlian', description:"desc
 
 
 
+
+
 app.post('/api/receipes',(req,res)=> {
 
   let category = req.body.category
@@ -36,7 +38,26 @@ app.post('/api/receipes',(req,res)=> {
    
 })
 
-})          
+})  
+
+app.get ('/api/categories/:categoryName', (req,res) => {
+  // res.send(receipe)
+  let category = req.params.categoryName
+    models.Receipe.findAll({
+      where : {
+        category:category
+      }
+  })
+  .then((categories) => res.json(categories))
+
+  })
+
+
+// findAll({
+//   where: {
+//     category: value
+//   }
+// })
 app.get ('/api/receipes', (req,res) => {
     // res.send(receipe)
     let receipes = models.Receipe.findAll()

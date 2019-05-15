@@ -1,4 +1,4 @@
-
+/* @media only screen and (min-device-width : 0px) and (max-device-width : 480px){ */
 
 .menu {
     background-color: rgb(90, 14, 65);
@@ -41,6 +41,7 @@
    position:relative;
    /* background-color :#2ab7ca; */
    background-image: url('../images/cooking.png');
+   width : 100vw;
    background-repeat: repeate-y;
    background-size: 100%;
    min-height:100vh;

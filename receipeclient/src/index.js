@@ -8,12 +8,13 @@ import {BrowserRouter,Switch, Route} from 'react-router-dom'
 import {BaseLayout} from './components/BaseLayout'
 import {AddReceipe} from './components/AddReceipe'
 import {ViewAllReceipe} from './components/ViewAllReceipe'
+import {HomePage} from './components/HomePage'
 
 ReactDOM.render(
     <BrowserRouter>
     <BaseLayout>
     <Switch>
-    <Route path="/" exact component={App} />
+    <Route path="/" exact component={HomePage} />
     <Route path="/view-all-receipes" component={ViewAllReceipe} />
     <Route path="/add-receipe" component={AddReceipe} />
 

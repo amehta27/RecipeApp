@@ -1,6 +1,10 @@
 
 .listContainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
 
     
 }
@@ -14,7 +18,8 @@
 }
 
 .item-container {
-    width: 20em;
+    
+ width: 15em; 
 
 }
 
