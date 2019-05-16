@@ -55,7 +55,13 @@ export class AddReceipe extends Component {
       <div className="columnalign">
         <div className = "heading">Add Receipe here</div>
         <div className="formstyling">
-          <label> Enter category:</label><input className = "inputbox1" onChange={this.handleTextChange} type = "text" name="category"/>
+          <label> Enter category:</label> 
+          <select className="dropdownstyle" onChange={this.handleTextChange} value={this.state.value} name="category">
+          <option value='select'>select</option>
+          <option value='italian'>Italian</option>
+          <option value='mexican'>Mexican</option>
+          <option value='indian'>Indian</option>
+        </select>
         </div>
         <div className="formstyling">
           <label> Enter Title:</label><input className = "inputbox2"onChange={this.handleTextChange} type = "text" name="title"/>

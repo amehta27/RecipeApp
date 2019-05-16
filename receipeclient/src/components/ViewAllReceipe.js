@@ -26,6 +26,9 @@ export class ViewAllReceipe extends Component {
         let receipes = this.state.receipes
         let receipeItems = receipes.map((receipe) => {
           return(
+            <div>
+            <br />
+            <br />
             <div className = 'item-container'>
                 <ul className="itemstyling">
                     <li>{receipe.category}</li>
@@ -39,6 +42,7 @@ export class ViewAllReceipe extends Component {
                     <label>amount Of time:</label><li className="paddingtime">{receipe.amountoftime}</li>
                      </div>
                 </ul>
+            </div>
             </div>
           )
         })
