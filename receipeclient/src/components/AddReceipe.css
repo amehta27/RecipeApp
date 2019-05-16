@@ -14,7 +14,8 @@ label{
 .inputbox1{
     margin-left: 15px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .formstyling{
@@ -24,37 +25,42 @@ label{
 .inputbox2{
     margin-left: 48px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .inputbox3{
     margin-left: -2px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .inputbox4{
     margin-left: 12px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .inputbox5{
     margin-left: 12px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .inputbox6{
     margin-left: 10px;
     width: 300px;
-    height : 20px;
+    height : 35px;
+    box-shadow: 10px 10px 5px grey;
 }
        
 .buttonstyle{
-   width : 150px;
-   height :25px;
-   background-color: darkslateblue;
+   width : 200px;
+   height :35px;
+   background-color: rgb(31, 107, 77);
    font-size: 15px;
 
 }

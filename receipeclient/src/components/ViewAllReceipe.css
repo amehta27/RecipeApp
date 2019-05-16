@@ -40,3 +40,21 @@ margin-left : -35px;
     
 
 } */
+
+.dropdownstyle{
+    background-color: white;
+}
+
+.categorystyling{
+    margin-left: 5%;
+}
+
+h1{
+    margin-left: 5%;
+    color: rgb(31, 107, 77) 
+}
+
+label{
+    color: rgb(31, 107, 77);
+    
+}
